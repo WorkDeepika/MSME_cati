@@ -1,4 +1,4 @@
-const {User1}= require("../models/userModel")
+const {User}= require("../models/userModel")
 
 const loginController= async (req, res)=>{
     const { email, password } = req.body;

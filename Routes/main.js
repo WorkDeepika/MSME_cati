@@ -2,7 +2,7 @@ const express = require('express');
 const {welcome}=require("../controllers/wecomeController")
 // const { getAudioUrlController }= require("../controllers/audioController")
 // const { getImageUrl }= require("../controllers/addImageController")
-// const { loginController,  }= require("../controllers/loginController")
+const { loginController,  }= require("../controllers/loginController")
 const {putData, addUser, }= require("../controllers/addDataController")
 // const {exportDataToXLSX }=  require("../controllers/getCsvController")
 const multer = require('multer');
@@ -21,7 +21,7 @@ const router = express.Router();
 
 router.get('/', welcome)
 router.post('/add-data',putData);
-// router.post('/temp-add-data', tempAddData);
+router.post('/login', loginController);
 router.post('/add-user',addUser);
 // router.post('/get-xlsx',filterData);
 // router.post('/addOrUpdateProject',createOrUpdateProject);
