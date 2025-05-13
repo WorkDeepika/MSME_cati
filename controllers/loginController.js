@@ -8,7 +8,7 @@ const loginController= async (req, res)=>{
       }
   
       // Find the user by username
-      const user = await User1.findOne({ email : email });
+      const user = await User.findOne({ email : email });
       
       if (!user) {
           return res.status(401).json({ message: 'Invalid username or password' });
