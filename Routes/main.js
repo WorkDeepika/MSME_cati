@@ -4,7 +4,7 @@ const {welcome}=require("../controllers/wecomeController")
 // const { getImageUrl }= require("../controllers/addImageController")
 const { loginController,  }= require("../controllers/loginController")
 const {putData, addUser, }= require("../controllers/addDataController")
-// const {exportDataToXLSX }=  require("../controllers/getCsvController")
+const {exportDataToXLSX }=  require("../controllers/getCsvController")
 const multer = require('multer');
 const path = require('path');
 // const { getDateTime } = require('../controllers/getTimeDate');
@@ -25,7 +25,7 @@ router.post('/login', loginController);
 router.post('/add-user',addUser);
 // router.post('/get-xlsx',filterData);
 // router.post('/addOrUpdateProject',createOrUpdateProject);
-// router.get('/download-xlsx',exportDataToXLSX)
+router.get('/download-xlsx',exportDataToXLSX)
 // router.get('/getCurrentTimeDate', getDateTime);
 // router.post('/add-image', upload.single('file'), getImageUrl);
 // router.get('/genralInfo', genralInfo)

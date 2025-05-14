@@ -1,8 +1,8 @@
 const {DataModel} = require('../models/dataModel');
-const {ProjectModel} = require('../models/projectModel');
+// const {ProjectModel} = require('../models/projectModel');
 const {User} = require('../models/userModel');
-const { Pool } = require('pg');
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+// const { Pool } = require('pg');
+// const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 const putData = async (req, res) => {
     try {
         // Validate input data
@@ -139,52 +139,3 @@ module.exports={
     addUser,
     // createOrUpdateProject
 }
-
-
-// AadharNO
-// : 
-// "2222-3333-3344"
-// Date
-// : 
-// "23/02/2025"
-// Education
-// : 
-// "Completed Graduation"
-// Email
-// : 
-// "happ@gmail.com"
-// Gender
-// : 
-// "Female"
-// PanNo
-// : 
-// "33333333333333333"
-// Time
-// : 
-// "4:45:33 PM"
-// address
-// : 
-// "232323dwqdwd"
-// contact
-// : 
-// "2222222222"
-// dob
-// : 
-// "2025-02-14"
-// fatherName
-// : 
-// "birthday"
-
-
-// language
-// : 
-// "en"
-// latitude
-// : 
-// 21.1463
-// longitude
-// : 
-// 79.0849
-// name
-// : 
-// "happy"
